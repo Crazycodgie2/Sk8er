@@ -81,7 +81,7 @@ header {
   font-size: 38px;
 }
 
-#sub {
+.sub {
   order: -1;
   padding-right: 50px;
   border-right: 5px dotted white;
