@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: auto;
+  height: 2000px;
+  width: 800px;
+}
+
+.camera {
+  height: 500px;
+  width: 800px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+
+body {
+  background: rgb(0, 0, 0, 0.5)
+    url("file:///Users/punchcode/Downloads/skater%20background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
