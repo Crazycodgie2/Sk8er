@@ -8,84 +8,77 @@ html {
   box-sizing: inherit;
 }
 
-.container {
-  margin: auto;
-  height: 1000px;
-  width: 800px;
-}
-
-.icons {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.camera {
-  height: 500px;
-  width: 800px;
-  border-style: solid;
-  border-color: white;
-  border-width: 2px;
-  position: absolute;
-}
-
 body {
   background: url("file:///Users/punchcode/Downloads/skater%20background.jpg");
-  background-color: rgb(0, 0, 0, 0.25);
+  background-color: rgb(0, 0, 0, 0.5);
   background-blend-mode: darken;
+}
+
+#container {
+  margin: 0 auto 50px;
+  width: 900px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #999;
+  align-items: center;
 }
 
 .fb {
   background: rgb(58, 79, 138);
   border-bottom: 3px solid #888;
-  width: 65px;
-  height: 75px;
+  width: 32px;
+  height: 35px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 5px;
   margin: 0 5px 0;
-  font-size: 38px;
+  font-size: 18px;
 }
 
 .wifi {
   background: rgb(196, 130, 51);
   border-bottom: 3px solid #888;
-  width: 65px;
-  height: 75px;
+  width: 32px;
+  height: 35px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 5px;
   margin: 0 5px 0 0;
-  font-size: 38px;
+  font-size: 18px;
 }
 
 .twitter {
   background: rgb(94, 132, 190);
   border-bottom: 3px solid #888;
-  width: 65px;
-  height: 75px;
+  width: 32px;
+  height: 35px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 5px;
   margin: 0 5px 0 0;
-  font-size: 38px;
+  font-size: 18px;
 }
 
 .youtube {
   background: rgb(168, 46, 44);
   border-bottom: 3px solid #888;
-  width: 65px;
-  height: 75px;
+  width: 32px;
+  height: 35px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 5px;
   margin: 0 5px 0 0;
-  font-size: 38px;
+  font-size: 18px;
 }
 
 .sub {
   order: -1;
-  padding-right: 50px;
+  padding-right: 42px;
   border-right: 5px dotted white;
-  font-size: 21px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  height: 41px;
-  padding-top: 7px;
+  height: 25px;
+  padding-top: 5px;
   color: white;
 }
 
@@ -93,7 +86,7 @@ body {
   list-style: none;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-transform: uppercase;
   padding: 0;
 }
@@ -101,8 +94,333 @@ body {
 .siteNav > li {
   padding-top: 15px;
   height: 50px;
-  width: 250px;
+  width: 200px;
   background-color: rgb(169, 31, 44);
   text-align: center;
   border-bottom: 6px solid rgba(1, 1, 1, 0.5);
+}
+
+.cameraPicture {
+  background: url("file:///Users/punchcode/Downloads/top-image.png");
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: -226px -153px;
+  border: 8px white solid;
+  height: 325px;
+  width: auto;
+  margin: auto;
+}
+
+.cameraPicture > img {
+  position: absolute;
+  top: 164px;
+  right: 792px;
+  height: 246px;
+  width: 350px;
+}
+
+.grid {
+  position: absolute;
+}
+
+.grid > img {
+  position: absolute;
+  height: 323px;
+  top: 7px;
+  width: 900px;
+  left: 0;
+  opacity: 0.5;
+  border-bottom: 8px solid rgb(70, 70, 70);
+}
+
+.fk {
+  background: rgb(79, 79, 79);
+  height: 27px;
+  width: 25px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 6px;
+  color: #999;
+  margin: 0 4px;
+}
+
+.wf {
+  background: rgb(174, 174, 174);
+  height: 27px;
+  width: 25px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 6px;
+  color: #999;
+  margin: 0 4px;
+}
+
+.tw {
+  background: rgb(123, 123, 123);
+  height: 27px;
+  width: 25px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 6px;
+  color: #999;
+  margin: 0 4px;
+}
+
+.yt {
+  background: rgb(117, 117, 117);
+  height: 27px;
+  width: 25px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 6px;
+  color: #999;
+  margin: 0 4px;
+}
+
+.news {
+  display: grid;
+  grid-template-areas: "story1 story2 story3";
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 21px;
+}
+
+.news h1 {
+  font-size: 24px;
+  font-family: "Lucida Sans Unicode", "Lucdia Grande", sans-serif;
+  font-weight: 150;
+  color: rgb(70 70 70);
+  padding: 0 15px;
+  margin-top: 15px;
+}
+
+.news h6 {
+  font-size: 13px;
+  font-family: "Lucida Sans Unicode", "Lucdia Grande", sans-serif;
+  color: rgb(70 70 70);
+  padding: 0 15px;
+  margin: 0px;
+  opacity: 0.4;
+}
+
+.news p {
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode", "Lucdia Grande", sans-serif;
+  font-weight: 150;
+  color: rgb(70 70 70);
+  padding: 0 15px;
+  line-height: 2.4;
+}
+
+.news span {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.news span > a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.story1,
+.story2,
+.story3 {
+  width: 285px;
+  background: white;
+  border-bottom: 8px solid rgb(70, 70, 70);
+}
+
+.story1 {
+  grid-area: story1;
+}
+
+.story2 {
+  grid-area: story2;
+}
+
+.story3 {
+  grid-area: story3;
+}
+
+.skaters {
+  display: grid;
+  grid-template-areas:
+    "sk1 sk2 sk3"
+    "sk4 sk4 sk3";
+  justify-content: space-between;
+  position: relative;
+  padding-top: 30px;
+}
+
+.arrow {
+  position: absolute;
+  background: rgb(169, 31, 44);
+  color: white;
+  top: 95px;
+  left: -200px;
+  height: 47px;
+  width: 159px;
+  text-align: center;
+  padding-top: 14px;
+  border-bottom: 3px solid gray;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 24px 0 23px 27px;
+  border-color: transparent transparent transparent rgb(169, 31, 44);
+  bottom: -3px;
+  left: 159px;
+}
+
+.skaters h3 {
+  color: white;
+  text-align: center;
+  font-size: 46px;
+  font-family: "Lucida Sans Unicode", "Lucdia Grande", sans-serif;
+}
+
+.steve {
+  grid-area: sk4;
+  background: url("file:///Users/punchcode/Downloads/sk8er-1.png");
+  width: 594px;
+  height: 228px;
+  position: absolute;
+  top: 18px;
+  padding-top: 45px;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: 0px -90px;
+  border: 5px white solid;
+}
+
+.tommy {
+  grid-area: sk3;
+  background: url("file:///Users/punchcode/Downloads/sk8er-2.png");
+  width: 285px;
+  height: 447px;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: -423px -11px;
+  padding-top: 110px;
+  border: 5px white solid;
+}
+
+.rodney {
+  grid-area: sk2;
+  background: url("file:///Users/punchcode/Downloads/sk8er-3.png");
+  width: 285px;
+  height: 200px;
+  position: absolute;
+  right: -143px;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: -6px -21px;
+  border: 5px white solid;
+}
+
+.lance {
+  grid-area: sk1;
+  background: url("file:///Users/punchcode/Downloads/sk8er-4.png");
+  width: 285px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: -165px -12px;
+  border: 5px white solid;
+}
+
+.sk8boardPics {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  padding: 20px 0;
+  margin: 28px 0;
+}
+
+footer {
+  display: grid;
+  grid-template-areas:
+    "contact name"
+    "lorem name"
+    "icons name"
+    ". submit";
+  background: white;
+  position: relative;
+  padding: 25px 25px;
+}
+
+footer > h3 {
+  grid-area: contact;
+  margin: 0;
+  font-size: 28px;
+  margin-bottom: -32px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+footer > p {
+  grid-area: lorem;
+  width: 440px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(77, 77, 77);
+  line-height: 1.6;
+}
+
+footer > .socialMedia {
+  display: flex;
+  grid-area: icons;
+  margin-top: -25px;
+}
+
+footer > textfield {
+  display: flex;
+  flex-direction: column;
+  width: 365px;
+  grid-area: name;
+}
+
+#name {
+  padding: 10px 10px;
+  border-top: 4px solid gray;
+  border-left: 3px solid gray;
+}
+
+#email {
+  padding: 10px 10px;
+  margin-top: 15px;
+  border-top: 4px solid gray;
+  border-left: 3px solid gray;
+}
+
+textfield > textarea {
+  padding: 5px 10px 40px 10px;
+  margin-top: 15px;
+  border-top: 4px solid gray;
+  border-left: 3px solid gray;
+  resize: none;
+}
+
+textfield > button {
+  width: 176px;
+  margin-left: 190px;
+  margin-top: 15px;
+  background: rgb(169, 31, 44);
+  color: white;
+  font-size: 16px;
+  border: 0;
+  padding: 7px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
 }
